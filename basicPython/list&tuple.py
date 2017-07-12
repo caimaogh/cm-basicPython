@@ -26,4 +26,16 @@ classmates.pop(3)
 print('pop(3)后',classmates)
 # 要把某个元素替换成别的元素，可以直接赋值给对应的索引位置：
 classmates[1] = 'Sarah'
-# list里面的元素的数据类型也可以不同,list元素也可以是另一个list
+# list里面的元素的数据类型也可以不同,list元素也可以是另一个list类似于Java的二维数组
+
+
+
+# Python内置的另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改
+# 没有append()，insert()这样的方法,也不能赋值成另外的元素
+language = ('PHP','Java','Python','JS','C++')
+print(language)
+
+# Python规定，只有一个元素的tuple定义时必须加一个逗号,，来消除歧义：
+a = (1,)
+# Python在显示只有1个元素的tuple时，也会加一个逗号,，以免你误解成数学计算意义上的括号。
+print(a)
